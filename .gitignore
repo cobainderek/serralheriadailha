@@ -7,3 +7,11 @@ dist/
 .vscode/
 .idea/
 *.log
+
+# Arquivos privados/internos
+.claude/
+.astro/
+legacy_docs/
+CLAUDE_DOCS.md
+llm.txt
+PROJECT_CONTEXT.md
