@@ -1,4 +1,6 @@
 ---
+import { getAssetUrl } from '../utils/assets';
+
 interface Work {
   image: string;
   title: string;
@@ -7,15 +9,15 @@ interface Work {
 
 // Placeholder para as imagens - você pode substituir depois
 const works: Work[] = [
-  { image: '/images/placeholder-1.jpg', title: 'Portão Industrial', category: 'Portões' },
-  { image: '/images/placeholder-2.jpg', title: 'Estrutura Metálica', category: 'Estruturas' },
-  { image: '/images/placeholder-3.jpg', title: 'Guarda-Corpo', category: 'Acabamentos' },
-  { image: '/images/placeholder-4.jpg', title: 'Grade de Proteção', category: 'Segurança' },
-  { image: '/images/placeholder-5.jpg', title: 'Portão Basculante', category: 'Portões' },
-  { image: '/images/placeholder-6.jpg', title: 'Escada Metálica', category: 'Estruturas' },
-  { image: '/images/placeholder-7.jpg', title: 'Corrimão', category: 'Acabamentos' },
-  { image: '/images/placeholder-8.jpg', title: 'Portão Residencial', category: 'Portões' },
-  { image: '/images/placeholder-9.jpg', title: 'Cobertura Metálica', category: 'Estruturas' },
+  { image: getAssetUrl('images/placeholder-1.jpg'), title: 'Portão Industrial', category: 'Portões' },
+  { image: getAssetUrl('images/placeholder-2.jpg'), title: 'Estrutura Metálica', category: 'Estruturas' },
+  { image: getAssetUrl('images/placeholder-3.jpg'), title: 'Guarda-Corpo', category: 'Acabamentos' },
+  { image: getAssetUrl('images/placeholder-4.jpg'), title: 'Grade de Proteção', category: 'Segurança' },
+  { image: getAssetUrl('images/placeholder-5.jpg'), title: 'Portão Basculante', category: 'Portões' },
+  { image: getAssetUrl('images/placeholder-6.jpg'), title: 'Escada Metálica', category: 'Estruturas' },
+  { image: getAssetUrl('images/placeholder-7.jpg'), title: 'Corrimão', category: 'Acabamentos' },
+  { image: getAssetUrl('images/placeholder-8.jpg'), title: 'Portão Residencial', category: 'Portões' },
+  { image: getAssetUrl('images/placeholder-9.jpg'), title: 'Cobertura Metálica', category: 'Estruturas' },
 ];
 ---
 

@@ -1,6 +1,6 @@
 ---
 // src/pages/index.astro
-const baseUrl = import.meta.env.BASE_URL;
+import { getAssetUrl } from "../utils/assets";
 ---
 
 <html lang="pt-br">
@@ -266,7 +266,10 @@ const baseUrl = import.meta.env.BASE_URL;
                     playsinline
                     class="w-full h-full object-cover"
                 >
-                    <source src="/images/hero-video.mp4" type="video/mp4" />
+                    <source
+                        src={getAssetUrl("images/hero-video.mp4")}
+                        type="video/mp4"
+                    />
                 </video>
 
                 <!-- Overlay mais leve para maior nitidez -->
@@ -401,7 +404,7 @@ const baseUrl = import.meta.env.BASE_URL;
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src="/images/servicos-portao.jpg"
+                                src={getAssetUrl('images/servicos-portao.jpg')}
                                 alt="Portões Automatizados"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -427,7 +430,7 @@ const baseUrl = import.meta.env.BASE_URL;
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src="/images/servicos-estrutura.jpg"
+                                src={getAssetUrl('images/servicos-estrutura.jpg')}
                                 alt="Estruturas Metálicas"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -452,7 +455,7 @@ const baseUrl = import.meta.env.BASE_URL;
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src="/images/servicos-grade.jpg"
+                                src={getAssetUrl('images/servicos-grade.jpg')}
                                 alt="Grades de Segurança"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -477,7 +480,7 @@ const baseUrl = import.meta.env.BASE_URL;
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src="/images/servicos-acabamento.jpg"
+                                src={getAssetUrl('images/servicos-acabamento.jpg')}
                                 alt="Acabamentos Finos"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
@@ -531,7 +534,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             <!-- Projeto 1 - Estrutura Metálica -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src="/images/portfolio/1.jpg"
+                                data-src={getAssetUrl('images/portfolio/1.jpg')}
                                 data-title="Estrutura Metálica"
                             >
                                 <div
@@ -539,7 +542,7 @@ const baseUrl = import.meta.env.BASE_URL;
                                     onclick="openLightbox('/images/portfolio/1.jpg', 'Estrutura Metálica')"
                                 >
                                     <img
-                                        src="/images/portfolio/1.jpg"
+                                        src={getAssetUrl('images/portfolio/1.jpg')}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Estrutura Metálica"
                                     />
@@ -585,7 +588,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             <!-- Projeto 2 - Escada -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src="/images/portfolio/2.jpg"
+                                data-src={getAssetUrl('images/portfolio/2.jpg')}
                                 data-title="Escada Metálica"
                             >
                                 <div
@@ -593,7 +596,7 @@ const baseUrl = import.meta.env.BASE_URL;
                                     onclick="openLightbox('/images/portfolio/2.jpg', 'Escada Metálica')"
                                 >
                                     <img
-                                        src="/images/portfolio/2.jpg"
+                                        src={getAssetUrl('images/portfolio/2.jpg')}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Escada Metálica"
                                     />
@@ -638,7 +641,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             <!-- Projeto 3 - Guarda Corpo -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src="/images/portfolio/3.jpg"
+                                data-src={getAssetUrl('images/portfolio/3.jpg')}
                                 data-title="Guarda Corpo"
                             >
                                 <div
@@ -646,7 +649,7 @@ const baseUrl = import.meta.env.BASE_URL;
                                     onclick="openLightbox('/images/portfolio/3.jpg', 'Guarda Corpo')"
                                 >
                                     <img
-                                        src="/images/portfolio/3.jpg"
+                                        src={getAssetUrl('images/portfolio/3.jpg')}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Guarda Corpo"
                                     />
@@ -691,7 +694,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             <!-- Projeto 5 - Escada -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src="/images/portfolio/5.jpg"
+                                data-src={getAssetUrl('images/portfolio/5.jpg')}
                                 data-title="Escada Metálica"
                             >
                                 <div
@@ -699,7 +702,7 @@ const baseUrl = import.meta.env.BASE_URL;
                                     onclick="openLightbox('/images/portfolio/5.jpg', 'Escada Metálica')"
                                 >
                                     <img
-                                        src="/images/portfolio/5.jpg"
+                                        src={getAssetUrl('images/portfolio/5.jpg')}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Escada Metálica"
                                     />
@@ -744,7 +747,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             <!-- Projeto 6 - Telhado -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src="/images/portfolio/6.jpg"
+                                data-src={getAssetUrl('images/portfolio/6.jpg')}
                                 data-title="Telhado Metálico"
                             >
                                 <div
@@ -752,7 +755,7 @@ const baseUrl = import.meta.env.BASE_URL;
                                     onclick="openLightbox('/images/portfolio/6.jpg', 'Telhado Metálico')"
                                 >
                                     <img
-                                        src="/images/portfolio/6.jpg"
+                                        src={getAssetUrl('images/portfolio/6.jpg')}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Telhado Metálico"
                                     />
@@ -1190,7 +1193,7 @@ const baseUrl = import.meta.env.BASE_URL;
                             class="aspect-square rounded-2xl overflow-hidden border border-stone-200 shadow-lg"
                         >
                             <img
-                                src="/images/sobre.jpg"
+                                src={getAssetUrl('images/sobre.jpg')}
                                 class="w-full h-full object-cover"
                                 alt="Nossa Oficina"
                                 loading="lazy"
