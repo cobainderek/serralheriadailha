@@ -253,6 +253,8 @@ import { getAssetUrl } from "../utils/assets";
             </div>
         </nav>
 
+        <!-- Main Content -->
+        <main>
         <!-- HERO SECTION - Principal -->
         <section
             class="relative min-h-[600px] h-[70vh] md:h-[80vh] lg:h-[85vh] w-full flex items-center justify-center overflow-hidden"
@@ -404,8 +406,10 @@ import { getAssetUrl } from "../utils/assets";
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src={getAssetUrl("images/servicos-portao.jpg")}
+                                src={getAssetUrl("images/servicos-portao.webp")}
                                 alt="Portões Automatizados"
+                                width="400"
+                                height="300"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                             <div
@@ -431,9 +435,11 @@ import { getAssetUrl } from "../utils/assets";
                         <div class="relative h-48 overflow-hidden">
                             <img
                                 src={getAssetUrl(
-                                    "images/servicos-estrutura.jpg",
+                                    "images/servicos-estrutura.webp",
                                 )}
                                 alt="Estruturas Metálicas"
+                                width="400"
+                                height="300"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                             <div
@@ -457,8 +463,10 @@ import { getAssetUrl } from "../utils/assets";
                     >
                         <div class="relative h-48 overflow-hidden">
                             <img
-                                src={getAssetUrl("images/servicos-grade.jpg")}
+                                src={getAssetUrl("images/servicos-grade.webp")}
                                 alt="Grades de Segurança"
+                                width="400"
+                                height="300"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                             <div
@@ -483,9 +491,11 @@ import { getAssetUrl } from "../utils/assets";
                         <div class="relative h-48 overflow-hidden">
                             <img
                                 src={getAssetUrl(
-                                    "images/servicos-acabamento.jpg",
+                                    "images/servicos-acabamento.webp",
                                 )}
                                 alt="Acabamentos Finos"
+                                width="400"
+                                height="300"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                             <div
@@ -538,19 +548,25 @@ import { getAssetUrl } from "../utils/assets";
                             <!-- Projeto 1 - Estrutura Metálica -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src={getAssetUrl("images/portfolio/1.jpg")}
+                                data-src={getAssetUrl("images/portfolio/1.webp")}
                                 data-title="Estrutura Metálica"
                             >
                                 <div
                                     class="group relative aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer shadow-md"
-                                    onclick="openLightbox('/images/portfolio/1.jpg', 'Estrutura Metálica')"
+                                    onclick="openLightbox('/images/portfolio/1.webp', 'Estrutura Metálica')"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Ver imagem ampliada: Estrutura Metálica"
+                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox('/images/portfolio/1.webp', 'Estrutura Metálica');}"
                                 >
                                     <img
                                         src={getAssetUrl(
-                                            "images/portfolio/1.jpg",
+                                            "images/portfolio/1.webp",
                                         )}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Estrutura Metálica"
+                                        width="400"
+                                        height="500"
                                     />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"
@@ -594,19 +610,25 @@ import { getAssetUrl } from "../utils/assets";
                             <!-- Projeto 2 - Escada -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src={getAssetUrl("images/portfolio/2.jpg")}
+                                data-src={getAssetUrl("images/portfolio/2.webp")}
                                 data-title="Escada Metálica"
                             >
                                 <div
                                     class="group relative aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer shadow-md"
-                                    onclick="openLightbox('/images/portfolio/2.jpg', 'Escada Metálica')"
+                                    onclick="openLightbox('/images/portfolio/2.webp', 'Escada Metálica')"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Ver imagem ampliada: Escada Metálica"
+                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox('/images/portfolio/2.webp', 'Escada Metálica');}"
                                 >
                                     <img
                                         src={getAssetUrl(
-                                            "images/portfolio/2.jpg",
+                                            "images/portfolio/2.webp",
                                         )}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Escada Metálica"
+                                        width="400"
+                                        height="500"
                                     />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"
@@ -649,19 +671,25 @@ import { getAssetUrl } from "../utils/assets";
                             <!-- Projeto 3 - Guarda Corpo -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src={getAssetUrl("images/portfolio/3.jpg")}
+                                data-src={getAssetUrl("images/portfolio/3.webp")}
                                 data-title="Guarda Corpo"
                             >
                                 <div
                                     class="group relative aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer shadow-md"
-                                    onclick="openLightbox('/images/portfolio/3.jpg', 'Guarda Corpo')"
+                                    onclick="openLightbox('/images/portfolio/3.webp', 'Guarda Corpo')"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Ver imagem ampliada: Guarda Corpo"
+                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox('/images/portfolio/3.webp', 'Guarda Corpo');}"
                                 >
                                     <img
                                         src={getAssetUrl(
-                                            "images/portfolio/3.jpg",
+                                            "images/portfolio/3.webp",
                                         )}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Guarda Corpo"
+                                        width="400"
+                                        height="500"
                                     />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"
@@ -704,19 +732,25 @@ import { getAssetUrl } from "../utils/assets";
                             <!-- Projeto 5 - Escada -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src={getAssetUrl("images/portfolio/5.jpg")}
+                                data-src={getAssetUrl("images/portfolio/5.webp")}
                                 data-title="Escada Metálica"
                             >
                                 <div
                                     class="group relative aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer shadow-md"
-                                    onclick="openLightbox('/images/portfolio/5.jpg', 'Escada Metálica')"
+                                    onclick="openLightbox('/images/portfolio/5.webp', 'Escada Metálica')"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Ver imagem ampliada: Escada Metálica"
+                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox('/images/portfolio/5.webp', 'Escada Metálica');}"
                                 >
                                     <img
                                         src={getAssetUrl(
-                                            "images/portfolio/5.jpg",
+                                            "images/portfolio/5.webp",
                                         )}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Escada Metálica"
+                                        width="400"
+                                        height="500"
                                     />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"
@@ -759,19 +793,25 @@ import { getAssetUrl } from "../utils/assets";
                             <!-- Projeto 6 - Telhado -->
                             <div
                                 class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3"
-                                data-src={getAssetUrl("images/portfolio/6.jpg")}
+                                data-src={getAssetUrl("images/portfolio/6.webp")}
                                 data-title="Telhado Metálico"
                             >
                                 <div
                                     class="group relative aspect-[4/5] overflow-hidden rounded-2xl cursor-pointer shadow-md"
-                                    onclick="openLightbox('/images/portfolio/6.jpg', 'Telhado Metálico')"
+                                    onclick="openLightbox('/images/portfolio/6.webp', 'Telhado Metálico')"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-label="Ver imagem ampliada: Telhado Metálico"
+                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox('/images/portfolio/6.webp', 'Telhado Metálico');}"
                                 >
                                     <img
                                         src={getAssetUrl(
-                                            "images/portfolio/6.jpg",
+                                            "images/portfolio/6.webp",
                                         )}
                                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         alt="Telhado Metálico"
+                                        width="400"
+                                        height="500"
                                     />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"
@@ -855,25 +895,45 @@ import { getAssetUrl } from "../utils/assets";
                     <div
                         class="flex justify-center gap-2 mt-8"
                         id="carousel-dots"
+                        role="tablist"
+                        aria-label="Navegação do carrossel de projetos"
                     >
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-blue-500 transition-all"
-                            data-index="0"></button>
+                            data-index="0"
+                            aria-label="Ir para o slide 1"
+                            role="tab"
+                            aria-selected="true"></button>
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-stone-300 hover:bg-amber-300 transition-all"
-                            data-index="1"></button>
+                            data-index="1"
+                            aria-label="Ir para o slide 2"
+                            role="tab"
+                            aria-selected="false"></button>
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-stone-300 hover:bg-amber-300 transition-all"
-                            data-index="2"></button>
+                            data-index="2"
+                            aria-label="Ir para o slide 3"
+                            role="tab"
+                            aria-selected="false"></button>
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-stone-300 hover:bg-amber-300 transition-all"
-                            data-index="3"></button>
+                            data-index="3"
+                            aria-label="Ir para o slide 4"
+                            role="tab"
+                            aria-selected="false"></button>
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-stone-300 hover:bg-amber-300 transition-all"
-                            data-index="4"></button>
+                            data-index="4"
+                            aria-label="Ir para o slide 5"
+                            role="tab"
+                            aria-selected="false"></button>
                         <button
                             class="carousel-dot w-3 h-3 rounded-full bg-stone-300 hover:bg-amber-300 transition-all"
-                            data-index="5"></button>
+                            data-index="5"
+                            aria-label="Ir para o slide 6"
+                            role="tab"
+                            aria-selected="false"></button>
                     </div>
                 </div>
             </div>
@@ -962,12 +1022,12 @@ import { getAssetUrl } from "../utils/assets";
         <script>
             // Dados das imagens para o lightbox
             const portfolioImages = [
-                { src: "/images/portfolio/1.jpg", title: "Estrutura Metálica" },
-                { src: "/images/portfolio/2.jpg", title: "Escada Metálica" },
-                { src: "/images/portfolio/3.jpg", title: "Guarda Corpo" },
-                { src: "/images/portfolio/4.jpg", title: "Guarda Corpo" },
-                { src: "/images/portfolio/5.jpg", title: "Escada Metálica" },
-                { src: "/images/portfolio/6.jpg", title: "Telhado Metálico" },
+                { src: "/images/portfolio/1.webp", title: "Estrutura Metálica" },
+                { src: "/images/portfolio/2.webp", title: "Escada Metálica" },
+                { src: "/images/portfolio/3.webp", title: "Guarda Corpo" },
+                { src: "/images/portfolio/4.webp", title: "Guarda Corpo" },
+                { src: "/images/portfolio/5.webp", title: "Escada Metálica" },
+                { src: "/images/portfolio/6.webp", title: "Telhado Metálico" },
             ];
 
             let currentLightboxIndex = 0;
@@ -1207,9 +1267,11 @@ import { getAssetUrl } from "../utils/assets";
                             class="aspect-square rounded-2xl overflow-hidden border border-stone-200 shadow-lg"
                         >
                             <img
-                                src={getAssetUrl("images/sobre.jpg")}
+                                src={getAssetUrl("images/sobre.webp")}
                                 class="w-full h-full object-cover"
                                 alt="Nossa Oficina"
+                                width="600"
+                                height="600"
                                 loading="lazy"
                             />
                         </div>
@@ -1382,6 +1444,8 @@ import { getAssetUrl } from "../utils/assets";
                 </a>
             </div>
         </section>
+
+        </main>
 
         <!-- FOOTER -->
         <footer class="relative overflow-hidden">
@@ -1624,6 +1688,7 @@ import { getAssetUrl } from "../utils/assets";
                                         style="border:0;"
                                         allowfullscreen=""
                                         loading="lazy"
+                                        title="Mapa de localização - Serralheria da Ilha"
                                         class="grayscale hover:grayscale-0 transition-all duration-500"
                                     ></iframe>
                                 </div>
